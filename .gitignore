@@ -3,3 +3,7 @@ XLnet-gen/
 bert_repo/
 gpt-2/
 xlnet/
+example.txt
+squad_bert_base.tgz
+squad_bert_base/
+test.html
