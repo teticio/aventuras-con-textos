@@ -7,3 +7,5 @@ example.txt
 squad_bert_base.tgz
 squad_bert_base/
 test.html
+transcript.txt
+.vscode
