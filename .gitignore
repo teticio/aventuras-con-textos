@@ -9,3 +9,5 @@ squad_bert_base/
 test.html
 transcript.txt
 .vscode
+Pipfile
+Pipfile.lock
