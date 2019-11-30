@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+ipykernel = "*"
+tensorflow-gpu = "==1.14.0"
+torch = "*"
+scipy = "*"
+pandas = "*"
+numpy = "*"
+seaborn = "*"
+bokeh = "*"
+sklearn = "*"
+gensim = "*"
+keras = "*"
+ktrain = "*"
+matplotlib = "*"
+tqdm = "*"
+beautifulsoup4 = "*"
+fuzzywuzzy = "*"
+transformers = {path = "./transformers"}
+
+[requires]
+python_version = "3.6"
