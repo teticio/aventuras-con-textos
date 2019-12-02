@@ -9,4 +9,5 @@ squad_bert_base.tgz
 squad_bert_base/
 transcript.txt
 .vscode
-
+run_generation
+activation
