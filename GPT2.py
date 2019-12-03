@@ -82,7 +82,7 @@ def sample_sequence(model, tokenizer, length, context, temperature=1, top_k=0, t
                 next_token = torch.multinomial(F.softmax(filtered_logits, dim=-1), num_samples=1)
             generated = torch.cat((generated, next_token), dim=1)
             
-            out = generated.tolist()
+            out = generated[:, context.shape[1]:].tolist()
             chunk = tokenizer.decode(out[0], clean_up_tokenization_spaces=True)[len(text):]
             text += chunk
             if text.find('<|endoftext|>') != -1:
