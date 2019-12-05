@@ -97,13 +97,15 @@ def main():
     parser.add_argument("--length", type=int, default=20)
     parser.add_argument('--seed', type=int, default=random.getrandbits(32),
                         help="random seed for initialization")
+    parser.add_argument("--temperature", type=float, default=1.0,
+                        help="temperature of 0 implies greedy sampling")
     args = parser.parse_args()
     
     model_type = 'gpt2'
     model_name_or_path = 'gpt2-xl'
     prompt = args.prompt
     length = args.length
-    temperature = 1.0
+    temperature = args.temperature
     repetition_penalty = 1.0
     top_k = 0
     top_p = 0.9
