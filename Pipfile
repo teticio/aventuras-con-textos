@@ -23,6 +23,7 @@ tqdm = "*"
 beautifulsoup4 = "*"
 fuzzywuzzy = "*"
 transformers = {path = "./transformers"}
+tensorflow-hub = "*"
 
 [requires]
 python_version = "3.6"
