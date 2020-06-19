@@ -11,3 +11,6 @@ transcript.txt
 .vscode
 run_generation
 activation
+Amazon_Opiniones_MY_VERSION.ipynb
+test_label.p
+test_pred.p
