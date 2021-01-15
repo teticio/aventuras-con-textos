@@ -11,7 +11,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 MAX_LENGTH = int(10000)  # Hardcoded max length to avoid infinite loop
 
-ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (GPT2Config,)), ())
+#ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (GPT2Config,)), ())
 
 MODEL_CLASSES = {
     'gpt2': (GPT2LMHeadModel, GPT2Tokenizer),
@@ -145,7 +145,7 @@ def main():
             repetition_penalty=repetition_penalty,
             device=device,
         )
-    except:
+    except Exception as e:
         print('Please try again when I am less busy...');
     return
     
