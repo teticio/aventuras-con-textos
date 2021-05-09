@@ -984,9 +984,6 @@
             ],
             "version": "==4.3.3"
         },
-        "transformers": {
-            "path": "./transformers"
-        },
         "urllib3": {
             "hashes": [
                 "sha256:a8a318824cc77d1fd4b2bec2ded92646630d7fe8619497b142c84a9e6f5a7293",
